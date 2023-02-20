@@ -31,7 +31,10 @@ dependencies {
 	//lombok
 	testCompileOnly 'org.projectlombok:lombok'
 	testAnnotationProcessor 'org.projectlombok:lombok'
-	//junit
+
+	//mapstruct
+	implementation 'org.mapstruct:mapstruct:1.5.2.Final'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.2.Final'
 }
 
 tasks.named('test') {

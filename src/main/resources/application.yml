@@ -10,3 +10,4 @@ spring:
   batch: #TODO
     jdbc:
       initialize-schema: always
+    job.names: ${job.name:NONE}

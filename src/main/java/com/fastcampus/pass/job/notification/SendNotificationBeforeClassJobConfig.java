@@ -46,6 +46,7 @@ public class SendNotificationBeforeClassJobConfig {
 	@Bean
 	public Step addNotificationStep() {
 		return this.stepBuilderFactory.get("addNotificationStep")
+				//input output
 				.<BookingEntity, NotificationEntity>chunk(CHUNK_SIZE)
 				.reader(addNotificationItemReader())
 				.processor(addNotificationItemProcessor())

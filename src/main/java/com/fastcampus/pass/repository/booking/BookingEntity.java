@@ -1,5 +1,6 @@
 package com.fastcampus.pass.repository.booking;
 
+import com.fastcampus.pass.repository.BaseEntity;
 import com.fastcampus.pass.repository.pass.PassEntity;
 import com.fastcampus.pass.repository.user.UserEntity;
 import java.time.LocalDateTime;
@@ -22,7 +23,7 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name = "booking")
-public class BookingEntity {
+public class BookingEntity extends BaseEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

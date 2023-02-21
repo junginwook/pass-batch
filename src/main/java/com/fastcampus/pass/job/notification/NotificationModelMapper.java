@@ -24,6 +24,5 @@ public interface NotificationModelMapper {
 	@Named("text")
 	default String text(LocalDateTime startedAt) {
 		return String.format("안녕하세요. %s 수업 시작합니다. 수업 전 출석 체크 부탁드립니다. \uD83D\uDE0A", LocalDateTimeUtils.format(startedAt));
-
 	}
 }
